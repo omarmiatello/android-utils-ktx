@@ -6,6 +6,14 @@ Utils in Kotlin for Android Developer :)
 
 ## Setup EasyFRC (Easy Firebase Remote Config)
 
+Add this in your root `build.gradle` file:
+```gradle
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+}
+```
+
 Grab via Gradle (v4 or later):
 ```groovy
 implementation 'com.github.jacklt.jutils:easyfrc:1.0.1'
@@ -16,13 +24,10 @@ compile 'com.github.jacklt.jutils:easyfrc:1.0.1'
 ```
 
 NOTE:
-- Add Firebase to your project:
-
-Open Menu "Tools" > "Firebase": 
-
+- Add Firebase to your project: Open Menu "Tools" > "Firebase"
 - Double check dependencies: for FRC and Kotlin
 ```groovy
-implementation 'com.google.firebase:firebase-config:11.2.2'
+implementation "com.google.firebase:firebase-config:$firebase_version"
 implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 ```
 
