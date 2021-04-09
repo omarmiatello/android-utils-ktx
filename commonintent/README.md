@@ -1,23 +1,32 @@
-# android-utils-ktx
+# CommonIntent
 
-[![GitHub license](https://img.shields.io/github/license/omarmiatello/android-utils-ktx)](LICENSE)
+[![GitHub license](https://img.shields.io/github/license/omarmiatello/android-utils-ktx)](../LICENSE)
 
-This is a group of libraries which aim to supplement Android with features which are commonly required by developers.
-
-Currently contains:
-
-### [EasyFRC](./easyfrc) (Easy Firebase Remote Config)
-Simple configuration: Variables for [Firebase Remote Config](https://firebase.google.com/docs/remote-config)
-
-### [CommonIntent](./commonintent)
 [Common intents](https://developer.android.com/guide/components/intents-common.html) for Android
 
----
+## Setup
 
-## Contributions
+Add this in your `build.gradle.ktx` file:
+```kotlin
+implementation("com.github.omarmiatello.android-utils-ktx:commonintent:1.1.0")
+```
 
-Please contribute! We will gladly review any pull requests.
-Make sure to read the [Contributing](CONTRIBUTING.md) page first though.
+## How to use
+
+```kotlin
+// CommonIntents
+val smsIntent = CommonIntent.composeSmsMessage(message = "Hi!")
+val emailIntent = CommonIntent.composeEmail(addresses = arrayOf("a@a.a"), subject = "Hi!", text = "Message")
+val playStoreIntent = CommonIntent.openMarket(appPackage = "com.package.myapp")
+val settingIntent = CommonIntent.openAppDetailSetting(appPackage = "com.package.myapp")
+
+// Utility: Intent.isIntentSafe()
+val isSafe: Boolean = smsIntent.isIntentSafe(context)
+
+// Utility: Uri to Intent
+val uriIntent = "https://www.example.com".toUri().toViewIntent()
+val uriIntent2 = Uri.parse("https://www.example.com").toViewIntent()
+```
 
 ## License
 

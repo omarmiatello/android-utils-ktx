@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.github.jacklt.jutils.example.MainActivity">
+    tools:context="com.github.omarmiatello.androidutilsktx.example.MainActivity">
 
 </LinearLayout>
