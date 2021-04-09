@@ -1,6 +1,7 @@
 # CommonIntent
 
 [![GitHub license](https://img.shields.io/github/license/omarmiatello/android-utils-ktx)](../LICENSE)
+[![](https://img.shields.io/maven-central/v/com.github.omarmiatello.android-utils-ktx/commonintent)](https://search.maven.org/search?q=g:com.github.omarmiatello.android-utils-ktx)
 
 [Common intents](https://developer.android.com/guide/components/intents-common.html) for Android
 

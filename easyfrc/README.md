@@ -1,6 +1,7 @@
 # EasyFRC (Easy Firebase Remote Config)
 
 [![GitHub license](https://img.shields.io/github/license/omarmiatello/android-utils-ktx)](../LICENSE)
+[![](https://img.shields.io/maven-central/v/com.github.omarmiatello.android-utils-ktx/easyfrc)](https://search.maven.org/search?q=g:com.github.omarmiatello.android-utils-ktx)
 
 Simple configuration: Variables for [Firebase Remote Config](https://firebase.google.com/docs/remote-config)
 
