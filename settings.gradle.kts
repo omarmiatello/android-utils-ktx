@@ -10,3 +10,4 @@ rootProject.name = "android-utils-ktx"
 include(":sample")
 include(":easyfrc")
 include(":commonintent")
+include(":slf4j-logger")

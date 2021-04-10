@@ -6,11 +6,14 @@ This is a group of libraries which aim to supplement Android with features which
 
 Currently contains:
 
-### [EasyFRC](./easyfrc) (Easy Firebase Remote Config)
-Simple configuration: Variables for [Firebase Remote Config](https://firebase.google.com/docs/remote-config)
+### [Easy FRC](./easyfrc) (Easy Firebase Remote Config)
+> Simple configuration: Variables for [Firebase Remote Config](https://firebase.google.com/docs/remote-config)
 
-### [CommonIntent](./commonintent)
-[Common intents](https://developer.android.com/guide/components/intents-common.html) for Android
+### [Common Intent](./commonintent)
+> [Common intents](https://developer.android.com/guide/components/intents-common.html) for Android
+
+### [SLF4J Logger](./slf4j-logger)
+> Simple implementation of [SLF4J Logger](http://slf4j.org/manual.html) for Android
 
 ---
 

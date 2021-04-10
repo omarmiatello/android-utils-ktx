@@ -39,6 +39,12 @@ val sharedArtifacts = listOf(
         description = "Common intents for Android",
         group = projectGroup,
         version = "1.1.0"
+    ),
+    Module(
+        name = "slf4j-logger",
+        description = "Simple implementation of SLF4J Logger for Android",
+        group = projectGroup,
+        version = "1.0.0"
     )
 )
 
