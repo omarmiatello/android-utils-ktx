@@ -15,9 +15,26 @@ buildscript {
     }
 }
 
-tasks.register("clean", Delete::class) {
-    delete(rootProject.buildDir)
+tasks {
+    register("clean", Delete::class) {
+        delete(rootProject.buildDir)
+    }
+    val sourcesJar by creating(Jar::class) {
+        archiveClassifier.set("sources")
+        from(android.sourceSets.getByName("main").java.srcDirs)
+    }
+    val javadocJar by creating(Jar::class) {
+        dependsOn(JavaPlugin.JAVADOC_TASK_NAME)
+        classifier = "javadoc"
+        from(tasks["javadoc"])
+    }
+
+    artifacts {
+        add("archives", sourcesJar)
+        add("archives", javadocJar)
+    }
 }
+
 
 // Project configuration
 
